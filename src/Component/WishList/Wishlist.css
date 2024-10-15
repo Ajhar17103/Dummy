@@ -1,0 +1,8 @@
+.table {
+	margin-top: 20px; /* Add spacing above the table */
+  }
+  
+  .table th, .table td {
+	vertical-align: middle; /* Center align the content */
+  }
+  

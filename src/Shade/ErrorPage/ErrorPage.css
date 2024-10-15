@@ -1,0 +1,78 @@
+.error-page {
+    background-color: #121212; /* Dark background color */
+    color: #ffffff; /* Light text color */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    margin: 0; /* Remove default margins */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+    position: relative; /* Position for the square box */
+  }
+  
+  .square-box {
+    position: absolute; /* Absolute positioning for the animation */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none; /* Prevent interactions with the square box */
+  }
+  
+  .square-box div {
+    width: 30px; /* Size of squares */
+    height: 30px; /* Size of squares */
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent squares */
+    margin: 5px;
+    animation: square-animation 1.5s infinite; /* Animation for the squares */
+  }
+  
+  /* Add animation for the squares */
+  @keyframes square-animation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .main-error-wrapper {
+    z-index: 1; /* Ensure it sits above the square box */
+  }
+  
+  h1 {
+    font-size: 5rem; /* Large font size for the error code */
+  }
+  
+  h2 {
+    font-size: 1.5rem; /* Medium font size for the error message */
+  }
+  
+  .btn {
+    margin-top: 20px; /* Space above the button */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 3rem; /* Smaller font size on mobile */
+    }
+  
+    h2 {
+      font-size: 1.2rem; /* Adjust heading size for mobile */
+    }
+  
+    .square-box div {
+      width: 20px; /* Smaller squares for mobile */
+      height: 20px; /* Smaller squares for mobile */
+    }
+  }
+  

@@ -1,0 +1,28 @@
+.card {
+    height: 100%;
+    /* Ensures the card takes the full height of its parent */
+}
+
+.product-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* Maintain aspect ratio */
+    border-radius: 0.5rem;
+}
+
+.product-details {
+    background-color: #f8f9fa;
+    /* Light background */
+}
+
+.product-details h2 {
+    color: #007bff;
+    /* Bootstrap primary color */
+}
+
+.product-details h5 {
+    border-bottom: 1px solid #dee2e6;
+    /* Light border for separation */
+    padding-bottom: 0.5rem;
+}
