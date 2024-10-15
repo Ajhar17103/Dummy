@@ -39,7 +39,6 @@ const Products = ({ effect, setEffect }) => {
   // Handle page change
   const handlePageChange = (pageNumber) => {
     if (pageNumber) { // Check if pageNumber is not null or undefined
-      console.log(pageNumber, 'pageNumber');
       setIsLoading(true);
       setDynamicUrl(pageNumber);
       getAllProducts(pageNumber);
@@ -117,7 +116,6 @@ const Products = ({ effect, setEffect }) => {
       setFilteredProducts(filtered);
     }
   };
-
   if (isLoading) {
     return <Loader />;
   } else {
